@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   get '/login', to: 'sessions#new'
 
+  # get 'account_activation' => 'account_activations#edit', :as => :edit_account_activation
+
   post '/login', to: 'sessions#create'
 
   post '/signup', to: 'users#create'
@@ -24,5 +26,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   resources :users
+  resources :account_activations, only: [:edit]
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
