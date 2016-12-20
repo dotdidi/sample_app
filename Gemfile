@@ -7,6 +7,10 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'bcrypt', '3.1.11'
 # Use for provide sample user
 gem 'faker'
+# Basic image upload
+gem 'carrierwave', '0.11.2'
+gem 'mini_magick', '4.5.1'
+gem 'fog', '1.38.0'
 # Use for pagination
 gem 'will_paginate', '3.1.0'
 # Bootstap for the purpose of display
